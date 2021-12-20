@@ -2,19 +2,19 @@ import { useState } from "react"
 import logo from "./logo.svg"
 import "./App.css"
 
-function App() {
+const App = function () {
 	const [count, setCount] = useState(0)
 
-	var aaaa = 19
+	const aaaa = 19
 	const a = 10
 	const atom = {
-            value: 1,
-            addValue: function (value: string) {
-                return atom.value + value
-            },
+		value: 1,
+		addValue(value: string) {
+			return atom.value + value
+		},
 	}
-	const item = new Object()
-				var b=1
+	const b = 1
+	console.log(logo, count, setCount, aaaa, a, item, b)
 	return (
 		<div className="app">
 			<header className="header">this is header</header>
