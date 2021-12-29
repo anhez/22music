@@ -18,8 +18,9 @@
 		},
 		"ecmaVersion": 13,
 		"sourceType": "module",
-		"project": "./tsconfig.json"
+		"project": ["./tsconfig.json"]
 	},
+	"ignorePatterns": ["**/*.config.js"],
 	"plugins": ["react", "@typescript-eslint"],
 	"settings": {
 		"import/resolver": {
